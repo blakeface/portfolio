@@ -1,5 +1,7 @@
-body {
-  margin: 0px; }
+.body-wrapper {
+  margin: 0px;
+  display: flex;
+  flex-flow: column nowrap; }
 
 .welcome-body {
   display: flex;
@@ -7,7 +9,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url("/../images/background.jpg"); }
+  background-image: url("/../images/bg-welcome.jpg");
+  background-repeat: repeat;
+  background-size: 300px; }
 
 .welcome-text {
   display: flex;
@@ -19,3 +23,15 @@ body {
   .welcome-text h3 {
     font-size: 50px;
     font-family: "dk petit four"; }
+
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  font-family: "basic title font";
+  height: 10vh; }
+  .navigation a {
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    margin: 10px; }

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url('/../images/background.jpg');
+  @include bg-welcome;
 }
 
 .welcome-text{
@@ -12,11 +12,11 @@
 
   & h1 {
     font-size: 80px;
-    font-family: $main-font;
+    font-family: $welcome-font;
   }
 
   & h3 {
     font-size: 50px;
-    font-family: $main-font;
+    font-family: $welcome-font;
   }
 }

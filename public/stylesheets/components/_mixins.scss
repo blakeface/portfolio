@@ -6,3 +6,9 @@
   display: flex;
   flex-flow: column nowrap;
 }
+
+@mixin bg-welcome {
+  background-image: url('/../images/bg-welcome.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+}
