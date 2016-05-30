@@ -7,8 +7,10 @@
   flex-flow: column nowrap;
 }
 
-@mixin bg-welcome {
+@mixin welcome-bg {
   background-image: url('/../images/bg-welcome.jpg');
   background-repeat: repeat;
   background-size: 300px;
 }
+
+$bg-height: 675px;

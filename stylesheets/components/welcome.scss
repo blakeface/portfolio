@@ -2,8 +2,8 @@
   @include flex-column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  @include bg-welcome;
+  @include welcome-bg;
+  height: $bg-height;
 }
 
 .welcome-text{

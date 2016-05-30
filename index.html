@@ -6,14 +6,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js" charset="utf-8"></script>
     <script src="/module.js"></script>
-    <script src="/directives/welcome.js"></script>
-    <script src="/directives/about.js"></script>
-    <script src="/directives/projects.js"></script>
-    <script src="/directives/skills.js"></script>
-    <script src="/directives/contact.js"></script>
+    <script src="/module.controller.js"></script>
 
   </head>
-  <body class='body-wrapper'>
+  <body ng-controller"mainCtrl as vm" class='body-wrapper'>
     <bn-welcome></bn-welcome>
     <bn-about></bn-about>
     <bn-projects></bn-projects>
