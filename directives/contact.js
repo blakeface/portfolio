@@ -7,14 +7,9 @@
       restrict: 'E',
       scope: {},
       templateUrl: '/partials/contact.html',
-      controller: controller,
+      controller: 'mainCtrl',
       controllerAs: 'vm',
       bindToController: true,
     };
-  }
-
-  controller.$inject = [];
-  function controller() {
-    const vm = this;
   }
 })();

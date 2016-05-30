@@ -7,14 +7,9 @@
       restrict: 'E',
       scope: {},
       templateUrl: '/partials/skills.html',
-      controller: controller,
-      controllerAs: 'vm',
+      controller: 'mainCtrl',
       bindToController: true,
     };
   }
 
-  controller.$inject = [];
-  function controller() {
-    const vm = this;
-  }
 })();
