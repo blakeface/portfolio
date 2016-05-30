@@ -8,8 +8,6 @@
       scope: {},
       templateUrl: '/partials/about.html',
       controller: 'mainCtrl',
-      controllerAs: 'vm',
-      bindToController: true,
     };
   }
 })();

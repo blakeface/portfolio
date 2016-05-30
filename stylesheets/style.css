@@ -34,3 +34,14 @@
     font-weight: 900;
     color: black;
     margin: 10px; }
+
+.about-body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-family: "basic title font";
+  font-size: 30px; }
+
+#greeting {
+  font-family: "dk petit four";
+  font-size: 80px; }

@@ -1,5 +1,5 @@
 #Portfolio
 
-Built with Angularjs
+Built with Angularjs, SCSS
 
-Link soon to come...
+URL coming soon...

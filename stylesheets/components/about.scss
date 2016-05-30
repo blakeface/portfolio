@@ -1,0 +1,11 @@
+.about-body{
+  @include flex-column;
+  align-items: center;
+  font-family: $main-font;
+  font-size: 30px;
+}
+
+#greeting {
+  font-family: $welcome-font;
+  font-size: 80px;
+}

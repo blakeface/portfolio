@@ -8,8 +8,6 @@
       scope: {},
       templateUrl: '/partials/footer.html',
       controller: 'mainCtrl',
-      controllerAs: 'vm',
-      bindToController: true,
     };
   }
 
