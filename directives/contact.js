@@ -1,12 +1,12 @@
 (function () {
   angular.module('portfolio')
-  .directive('bnWelcome', bnWelcome);
+  .directive('bnContact', bnContact);
 
-  function bnWelcome() {
+  function bnContact() {
     return {
       restrict: 'E',
       scope: {},
-      templateUrl: '/partials/welcome.html',
+      templateUrl: '/partials/contact.html',
       controller: controller,
       controllerAs: 'vm',
       bindToController: true,
