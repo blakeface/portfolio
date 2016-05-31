@@ -1,24 +1,33 @@
 @media (max-width: 663px) {
   .projects-body{
     @include projects-bg;
-    height: 1000px;
     align-items: center;
     @include flex-column;
+    height: 1200px;
+
+    & h3 {
+      @include header;
+      color: white;
+    }
   }
 }
 
 @media (min-width: 664px){
   .projects-body{
     @include projects-bg;
-    height: $bg-height;
     align-items: center;
     @include flex-column;
+    height: $bg-height;
+
+    & h3 {
+      @include header;
+      color: white;
+    }
   }
 }
 
 .project-wrapper {
   @include flex-row;
-  margin: 20px;
   justify-content: space-around;
   width: 100vw;
 }
@@ -26,10 +35,11 @@
 .project {
   @include flex-column;
   color: white;
-  font-family: $welcome-font;
+  font-family: $header-font;
   font-size: $body1-size;
   width: 292px;
-  margin: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 
   & p {
     font-size: $body2-size;
@@ -46,7 +56,6 @@
   & a, h3 {
     text-decoration: none;
     color: white;
-    margin-bottom: 0px;
-    margin-top: 10px;
+    margin: 0px;
   }
 }

@@ -3,9 +3,12 @@
   align-items: center;
   font-family: $body-font;
   font-size: $body1-size;
+
+  & h3 {
+    @include header;
+  }
 }
 
 #greeting {
-  font-family: $welcome-font;
-  font-size: $header1-size;
+  @include header;
 }

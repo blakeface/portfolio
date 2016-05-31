@@ -8,7 +8,6 @@
       scope: {},
       templateUrl: '/partials/skills.html',
       controller: 'mainCtrl',
-      bindToController: true,
     };
   }
 

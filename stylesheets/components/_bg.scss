@@ -1,0 +1,17 @@
+@mixin welcome-bg {
+  background-image: url('/../images/welcome-bg.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+@mixin projects-bg {
+  background-image: url('/../images/projects-bg.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+}
+
+@mixin skills-bg{
+  background-image: url('/../images/skills-bg.jpg');
+  background-repeat: repeat;
+  background-size: 300px;
+}

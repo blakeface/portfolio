@@ -7,16 +7,11 @@
   flex-flow: column nowrap;
 }
 
-@mixin welcome-bg {
-  background-image: url('/../images/welcome-bg.jpg');
-  background-repeat: repeat;
-  background-size: 300px;
-}
-
-@mixin projects-bg {
-  background-image: url('/../images/projects-bg.jpg');
-  background-repeat: repeat;
-  background-size: 300px;
+@mixin header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: $header-font;
+  font-size: $header2-size;
 }
 
 $bg-height: 675px;
