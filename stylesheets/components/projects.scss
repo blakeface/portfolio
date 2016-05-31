@@ -1,0 +1,7 @@
+.projects-body{
+  @include projects-bg;
+  @include flex-column;
+  align-items: center;
+  color: white;
+  font-family: $main-font;
+}

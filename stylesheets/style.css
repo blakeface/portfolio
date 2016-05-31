@@ -8,7 +8,7 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  background-image: url("/../images/bg-welcome.jpg");
+  background-image: url("/../images/welcome-bg.jpg");
   background-repeat: repeat;
   background-size: 300px;
   height: 675px; }
@@ -45,3 +45,13 @@
 #greeting {
   font-family: "dk petit four";
   font-size: 80px; }
+
+.projects-body {
+  background-image: url("/../images/projects-bg.jpg");
+  background-repeat: repeat;
+  background-size: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: white;
+  font-family: "basic title font"; }
