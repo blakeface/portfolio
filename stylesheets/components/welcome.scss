@@ -11,12 +11,12 @@
   text-align: center;
 
   & h1 {
-    font-size: 80px;
+    font-size: $header1-size;
     font-family: $welcome-font;
   }
 
   & h3 {
-    font-size: 50px;
+    font-size: $header2-size;
     font-family: $welcome-font;
   }
 }

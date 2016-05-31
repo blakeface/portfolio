@@ -46,12 +46,51 @@
   font-family: "dk petit four";
   font-size: 80px; }
 
-.projects-body {
-  background-image: url("/../images/projects-bg.jpg");
-  background-repeat: repeat;
-  background-size: 300px;
+@media (max-width: 663px) {
+  .projects-body {
+    background-image: url("/../images/projects-bg.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    height: 1000px;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap; } }
+
+@media (min-width: 664px) {
+  .projects-body {
+    background-image: url("/../images/projects-bg.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    height: 675px;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap; } }
+
+.project-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+  justify-content: space-around;
+  width: 100vw; }
+
+.project {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
   color: white;
-  font-family: "basic title font"; }
+  font-family: "dk petit four";
+  font-size: 30px;
+  width: 292px;
+  margin: 20px; }
+  .project p {
+    font-size: 15px;
+    font-family: "basic title font";
+    margin: 0px; }
+  .project h5 {
+    font-family: "basic title font";
+    margin-bottom: 0px;
+    margin-top: 10px; }
+  .project a, .project h3 {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 10px; }

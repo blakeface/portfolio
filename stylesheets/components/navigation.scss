@@ -1,10 +1,10 @@
   .navigation{
   @include flex-row;
   justify-content: center;
-  font-family: $main-font;
+  font-family: $body-font;
 
   & a {
-    font-size: 30px;
+    font-size: $body1-size;
     font-weight: 900;
     color: black;
     margin: 10px;

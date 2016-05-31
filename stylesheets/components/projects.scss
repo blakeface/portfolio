@@ -1,7 +1,52 @@
-.projects-body{
-  @include projects-bg;
+@media (max-width: 663px) {
+  .projects-body{
+    @include projects-bg;
+    height: 1000px;
+    align-items: center;
+    @include flex-column;
+  }
+}
+
+@media (min-width: 664px){
+  .projects-body{
+    @include projects-bg;
+    height: $bg-height;
+    align-items: center;
+    @include flex-column;
+  }
+}
+
+.project-wrapper {
+  @include flex-row;
+  margin: 20px;
+  justify-content: space-around;
+  width: 100vw;
+}
+
+.project {
   @include flex-column;
-  align-items: center;
   color: white;
-  font-family: $main-font;
+  font-family: $welcome-font;
+  font-size: $body1-size;
+  width: 292px;
+  margin: 20px;
+
+  & p {
+    font-size: $body2-size;
+    font-family: $body-font;
+    margin: 0px;
+  }
+
+  & h5 {
+    font-family: $body-font;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
+
+  & a, h3 {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 10px;
+  }
 }
