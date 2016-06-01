@@ -1,11 +1,39 @@
-.skills-body{
-  @include skills-bg;
-  height: 400px;
-  @include flex-column;
-  align-items: center;
+@media (max-width: 505px){
+  .skills-body{
+    @include skills-bg;
+    height: 700px;
+    @include flex-column;
+    align-items: center;
 
-  & h3 {
-    @include header;
+    & h3 {
+      @include header;
+    }
+  }
+}
+
+@media (min-width: 506px) and (max-width: 732px){
+  .skills-body{
+    @include skills-bg;
+    height: 550px;
+    @include flex-column;
+    align-items: center;
+
+    & h3 {
+      @include header;
+    }
+  }
+}
+
+@media (min-width: 733px){
+  .skills-body{
+    @include skills-bg;
+    height: 400px;
+    @include flex-column;
+    align-items: center;
+
+    & h3 {
+      @include header;
+    }
   }
 }
 

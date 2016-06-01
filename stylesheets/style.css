@@ -53,7 +53,7 @@
   font-family: "dk petit four";
   font-size: 50px; }
 
-@media (max-width: 663px) {
+@media (max-width: 623px) {
   .projects-body {
     background-image: url("/../images/projects-bg.jpg");
     background-repeat: repeat;
@@ -61,7 +61,7 @@
     align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    height: 1200px; }
+    height: 1100px; }
     .projects-body h3 {
       margin-top: 50px;
       margin-bottom: 50px;
@@ -69,7 +69,7 @@
       font-size: 50px;
       color: white; } }
 
-@media (min-width: 664px) {
+@media (min-width: 624px) {
   .projects-body {
     background-image: url("/../images/projects-bg.jpg");
     background-repeat: repeat;
@@ -104,6 +104,8 @@
     font-size: 15px;
     font-family: "basic title font";
     margin: 0px; }
+  .project p:nth-of-type(2) {
+    margin-bottom: 30px; }
   .project h5 {
     font-family: "basic title font";
     margin-bottom: 0px;
@@ -113,19 +115,50 @@
     color: white;
     margin: 0px; }
 
-.skills-body {
-  background-image: url("/../images/skills-bg.jpg");
-  background-repeat: repeat;
-  background-size: 300px;
-  height: 400px;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center; }
-  .skills-body h3 {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: "dk petit four";
-    font-size: 50px; }
+@media (max-width: 505px) {
+  .skills-body {
+    background-image: url("/../images/skills-bg.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    height: 700px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .skills-body h3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: "dk petit four";
+      font-size: 50px; } }
+
+@media (min-width: 506px) and (max-width: 732px) {
+  .skills-body {
+    background-image: url("/../images/skills-bg.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    height: 550px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .skills-body h3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: "dk petit four";
+      font-size: 50px; } }
+
+@media (min-width: 733px) {
+  .skills-body {
+    background-image: url("/../images/skills-bg.jpg");
+    background-repeat: repeat;
+    background-size: 300px;
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .skills-body h3 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-family: "dk petit four";
+      font-size: 50px; } }
 
 .skills-row {
   display: flex;
