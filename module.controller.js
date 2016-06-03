@@ -6,6 +6,10 @@
   mainCtrl.$inject = [];
   function mainCtrl() {
     const vm = this;
+
+    vm.send = function () {
+      
+    }
   }
 
 })();

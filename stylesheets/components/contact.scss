@@ -1,0 +1,27 @@
+.contact-body{
+  @include flex-column;
+  align-items: center;
+
+  & h3 {
+    @include header;
+  }
+
+  & form {
+    @include flex-column;
+    font-family: $body-font;
+    font-size: $body1-size;
+    width: 80vw;
+    max-width: 500px;
+  }
+
+  & form textarea, form input {
+    font-family: $body-font;
+    font-size: $body2-size;
+    margin-bottom: 30px;
+  }
+}
+
+#submit-button {
+  font-family: cursive;
+  font-size: 10em;
+}

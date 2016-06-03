@@ -179,3 +179,28 @@
   .skills-column li {
     font-family: "basic title font";
     font-size: 15px; }
+
+.contact-body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+  .contact-body h3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: "dk petit four";
+    font-size: 50px; }
+  .contact-body form {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: "basic title font";
+    font-size: 30px;
+    width: 80vw;
+    max-width: 500px; }
+  .contact-body form textarea, .contact-body form input {
+    font-family: "basic title font";
+    font-size: 15px;
+    margin-bottom: 30px; }
+
+#submit-button {
+  font-family: cursive;
+  font-size: 10em; }
