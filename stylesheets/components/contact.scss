@@ -19,9 +19,11 @@
     font-size: $body2-size;
     margin-bottom: 30px;
   }
-}
 
-#submit-button {
-  font-family: cursive;
-  font-size: 10em;
+  a {
+    color: black;
+    & :hover {
+      color: #99FFFF;
+    }
+  }
 }

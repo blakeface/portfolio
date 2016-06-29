@@ -1,0 +1,14 @@
+.project {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50vw;
+  background: #BCD6E4; }
+  .project .project-hover {
+    z-index: 2; }
+
+.projects-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px; }
