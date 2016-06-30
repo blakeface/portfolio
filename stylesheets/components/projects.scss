@@ -1,52 +1,77 @@
-.project-wrapper {
-  @include flex-column;
-  align-items: center;
-  justify-content: center;
-  width: 47vw;
-  height: 420px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
-  .project-hover {
-    visibility: hidden;
-    font-family: $body-font;
-    position: absolute;
-    width: 47vw;
-    height: 420px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 30px;
-
-    h5 {
-      font-family: $header-font;
-      font-size: $body1-size;
-      margin-bottom: 0px;
-    }
-  }
-
-  &:hover {
-    .project-hover {
-      visibility: visible;
-      @include flex-column;
-      align-items: flex-start;
-      background: rgba(0, 0, 0, 0.75);
-      color: white;
-    }
-  }
-
-  .links {
-    @include flex-row;
-    width: 100%;
-    justify-content: center;
-    a {
-      margin: 10px;
-      color: white;
-      & :hover {
-        color: #FF9F83;
+@media (max-width: 950px) {
+  .projects-container {
+    .project-title {
+      display: flex;
+      justify-content: center;
+      h3 {
+        font-size: 130px;
+        font-family: $header-font;
+        margin: 10px;
       }
     }
+    @include flex-column;
+    padding: 0px;
+  }
+  .project-wrapper {
+    width: 100vw;
+    height: 420px;
+    &:hover {
+      .project-hover {
+        visibility: visible;
+        background: rgba(0, 0, 0, 0.75);
+        color: white;
+      }
+    }
+    .project {
+      width: 100%;
+      height: 100%;
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include project-hover;
+  }
+}
+
+@media (min-width: 951px) {
+  .projects-container {
+    .project-title{
+      visibility: hidden;
+      font-size: 0px;
+    }
+    @include flex-row;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .project-wrapper {
+    width: 46vw;
+    height: 420px;
+    &:hover {
+      .project-hover {
+        visibility: visible;
+        background: rgba(0, 0, 0, 0.75);
+        color: white;
+      }
+    }
+
+    .project {
+      width: 100%;
+      height: 100%;
+      @include flex-column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include project-hover;
+  }
+}
+#whereabouts {
+  background: #BCD6E4;
+  & a:hover {
+    color: #FF9F83;
   }
 }
 
@@ -57,15 +82,26 @@
     color: white;
   }
   background: rgb(112, 112, 112);
+  & a:hover {
+    color: rgb(40, 163, 195);
+  }
 }
 
-#whereabouts {
-  background: #BCD6E4;
-}
-
-.projects-container {
-  @include flex-row;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+#state-of-solar {
+  background-image: url('../images/solar-array.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  .project h3 {
+    margin: 0px;
+    justify-content: space-around;
+    font-family: geoSansLight;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    text-shadow: -4px 4px 5px black;
+  }
+  & a:hover {
+    color: rgb(40, 163, 195);
+  }
 }

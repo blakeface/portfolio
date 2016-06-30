@@ -15,3 +15,34 @@
 }
 
 $bg-height: 675px;
+
+@mixin project-hover {
+  .project-hover {
+    visibility: hidden;
+    font-family: $body-font;
+    @include flex-column;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-top: -420px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px;
+    h5 {
+      font-family: $header-font;
+      font-size: $body1-size;
+      margin-bottom: 0px;
+    }
+    .links {
+      @include flex-row;
+      width: 100%;
+      justify-content: center;
+      a {
+        margin: 10px;
+        color: white;
+      }
+    }
+  }
+}
