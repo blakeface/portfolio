@@ -1,4 +1,5 @@
 (function () {
+
   'use strict';
   angular.module('portfolio')
   .controller('mainCtrl', mainCtrl);
@@ -7,9 +8,8 @@
   function mainCtrl() {
     const vm = this;
 
-    vm.send = function () {
-      
+    vm.send = function (body) {
     }
-  }
 
+  }
 })();

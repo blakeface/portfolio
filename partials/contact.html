@@ -1,12 +1,14 @@
 <span class="contact-body">
   <h3>Contact</h3>
-  <form ng-submit="vm.send()">
+  <!-- <form ng-submit="vm.send(email)">
     <label for="email">Email:</label>
-    <input id="email" type="email" placeholder="So I know who to respond to">
+    <input id="email" type="email" ng-model="email.address"
+      placeholder="So I know who to respond to">
     <label for="contact">Say something:</label>
-    <textarea id="contact" rows="8" cols="40" placeholder="questions, comments, compliments, jokes ??"></textarea>
+    <textarea id="contact" rows="8" cols="40" ng-model="email.body"
+      placeholder="questions, comments, compliments, jokes ??"></textarea>
     <input type="submit" value="send it!">
-  </form>
+  </form> -->
   <div class="icon-wrapper">
     <a href="https://github.com/blakeface" target="_blank"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
     <a href="https://twitter.com/BlakeNetz" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>

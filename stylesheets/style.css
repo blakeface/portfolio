@@ -52,17 +52,6 @@
       font-size: 50px;
       font-family: "dk petit four"; } }
 
-.navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  font-family: "basic title font"; }
-  .navigation a {
-    font-size: 30px;
-    font-weight: 900;
-    color: white;
-    margin: 10px; }
-
 .about-section {
   display: flex;
   flex-direction: row nowrap; }
@@ -327,7 +316,7 @@
     width: 80vw;
     max-width: 500px; }
   .contact-body form textarea, .contact-body form input {
-    font-family: "basic title font";
+    font-family: geoSansLight;
     font-size: 15px;
     margin-bottom: 30px; }
   .contact-body a {
