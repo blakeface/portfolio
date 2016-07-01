@@ -1,5 +1,0 @@
-@media (max-width: 899px) {
-  .welcome-body {
-    display: none;
-    background-image: url("images/welcome.jpg");
-    z-index: 2; } }
