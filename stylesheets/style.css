@@ -125,7 +125,8 @@
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-align: center; }
     .project-wrapper .project-hover {
       visibility: hidden;
       font-family: "basic title font";
@@ -176,7 +177,8 @@
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      text-align: center; }
     .project-wrapper .project-hover {
       visibility: hidden;
       font-family: "basic title font";
@@ -203,6 +205,16 @@
         .project-wrapper .project-hover .links a {
           margin: 10px;
           color: white; } }
+
+#jerk {
+  background: #C33F3F; }
+  #jerk #jerk-font {
+    font-family: frenchy;
+    color: white;
+    font-size: 100px;
+    margin: 0px; }
+  #jerk a:hover {
+    color: #6AA9A9; }
 
 #whereabouts {
   background: #BCD6E4; }
@@ -297,7 +309,8 @@
     margin: 0px; }
   .skills-column li {
     font-family: "basic title font";
-    font-size: 15px; }
+    font-size: 15px;
+    color: black; }
 
 .contact-body {
   display: flex;
