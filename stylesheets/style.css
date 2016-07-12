@@ -336,3 +336,10 @@
     color: black; }
     .contact-body a :hover {
       color: #FA0914; }
+
+.temp-container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
