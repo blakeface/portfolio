@@ -18,6 +18,14 @@
   font-family: geoSansLight;
   src: url("/fonts/GeosansLight.ttf"); }
 
+#greeting {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: dk petit four;
+  font-size: 50px;
+  margin: 0px;
+  color: white; }
+
 .body-wrapper {
   margin: 0px;
   display: flex;
@@ -79,6 +87,8 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
     font-family: basic title font;
     font-size: 25px;
     width: 500px;
@@ -112,14 +122,6 @@
 @media (max-width: 475px) {
   .triangle {
     display: none; } }
-
-#greeting {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: dk petit four;
-  font-size: 50px;
-  margin: 0px;
-  color: white; }
 
 @media (max-width: 950px) {
   .projects-container {
@@ -274,6 +276,8 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: space-around;
+    text-align: center;
     font-family: basic title font;
     font-size: 25px;
     width: 500px;
@@ -308,41 +312,31 @@
   .triangle {
     display: none; } }
 
-@media (max-width: 505px) {
-  .skills-body {
-    height: 700px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: dk petit four;
-      font-size: 50px; } }
+#skills-spacer {
+  margin-top: 30px; }
 
-@media (min-width: 506px) and (max-width: 732px) {
-  .skills-body {
-    height: 550px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: dk petit four;
-      font-size: 50px; } }
+@media (min-width: 951px) {
+  .skills-title {
+    visibility: hidden;
+    font-size: 0px; } }
 
-@media (min-width: 733px) {
-  .skills-body {
-    height: 400px;
+@media (max-width: 950px) {
+  .skills-title {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
+    justify-content: center; }
+    .skills-title h3 {
+      font-size: 130px;
       font-family: dk petit four;
-      font-size: 50px; } }
+      margin: 10px; } }
+
+.skills {
+  background: #C33F3F; }
+
+.skills-body {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
 
 .skills-row {
   display: flex;
@@ -366,6 +360,7 @@
     color: black; }
 
 .contact-body {
+  background: #C33F3F;
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
@@ -386,6 +381,10 @@
     font-size: 15px;
     margin-bottom: 30px; }
   .contact-body a {
+    padding-left: 10px;
+    padding-right: 10px;
     color: black; }
     .contact-body a :hover {
-      color: #FA0914; }
+      color: white; }
+  .contact-body .icon-wrapper {
+    padding: 30px; }

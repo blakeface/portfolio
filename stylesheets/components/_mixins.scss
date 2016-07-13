@@ -54,6 +54,8 @@ $bg-height: 675px;
     .triangle-body{
       @include flex-column;
       align-items: center;
+      justify-content: space-around;
+      text-align: center;
       font-family: $body-font;
       font-size: 25px;
       width: 500px;

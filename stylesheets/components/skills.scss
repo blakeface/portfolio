@@ -1,39 +1,36 @@
 @include triangle;
 
-@media (max-width: 505px){
-  .skills-body{
-    height: 700px;
-    @include flex-column;
-    align-items: center;
+#skills-spacer {
+  margin-top: 30px;
+}
 
-    & h3 {
-      @include header;
+@media (min-width: 951px) {
+  .skills-title {
+    visibility: hidden;
+    font-size: 0px;
+  }
+}
+
+@media (max-width: 950px) {
+  .skills-title {
+    display: flex;
+    justify-content: center;
+    h3 {
+      font-size: 130px;
+      font-family: $header-font;
+      margin: 10px;
     }
   }
 }
 
-@media (min-width: 506px) and (max-width: 732px){
-  .skills-body{
-    height: 550px;
-    @include flex-column;
-    align-items: center;
-
-    & h3 {
-      @include header;
-    }
-  }
+.skills {
+  background: #C33F3F;
 }
 
-@media (min-width: 733px){
-  .skills-body{
-    height: 400px;
-    @include flex-column;
-    align-items: center;
-
-    & h3 {
-      @include header;
-    }
-  }
+.skills-body{
+  padding-top: 30px;
+  @include flex-column;
+  align-items: center;
 }
 
 .skills-row{

@@ -30,3 +30,9 @@ $header1-size: 80px;
 $header2-size: 50px;
 $body1-size: 30px;
 $body2-size: 15px;
+
+#greeting {
+  @include header;
+  margin: 0px;
+  color: white;
+}

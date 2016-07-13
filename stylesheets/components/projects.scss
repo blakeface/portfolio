@@ -1,11 +1,5 @@
 @include triangle;
 
-#greeting {
-  @include header;
-  margin: 0px;
-  color: white;
-}
-
 @media (max-width: 950px) {
   .projects-container {
     .project-title {
