@@ -1,3 +1,31 @@
+@font-face {
+  font-family: baby blocks;
+  src: url("/fonts/baby_blocks.ttf"); }
+
+@font-face {
+  font-family: basic title font;
+  src: url("/fonts/basictitlefont.ttf"); }
+
+@font-face {
+  font-family: dk petit four;
+  src: url("/fonts/DK_Petit_Four.otf"); }
+
+@font-face {
+  font-family: frenchy;
+  src: url("/fonts/frenchy.ttf"); }
+
+@font-face {
+  font-family: geoSansLight;
+  src: url("/fonts/GeosansLight.ttf"); }
+
+#greeting {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: dk petit four;
+  font-size: 50px;
+  margin: 0px;
+  color: white; }
+
 .body-wrapper {
   margin: 0px;
   display: flex;
@@ -27,10 +55,10 @@
     color: white; }
     .welcome-body h1 {
       font-size: 80px;
-      font-family: "dk petit four"; }
+      font-family: dk petit four; }
     .welcome-body h3 {
       font-size: 50px;
-      font-family: "dk petit four"; } }
+      font-family: dk petit four; } }
 
 @media (max-width: 799px) {
   video#bgvid {
@@ -47,57 +75,52 @@
     color: white; }
     .welcome-body h1 {
       font-size: 80px;
-      font-family: "dk petit four"; }
+      font-family: dk petit four; }
     .welcome-body h3 {
       font-size: 50px;
-      font-family: "dk petit four"; } }
+      font-family: dk petit four; } }
 
-.about-section {
+.triangle-section {
   display: flex;
   flex-direction: row nowrap; }
-  .about-section .about-body {
+  .triangle-section .triangle-body {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    font-family: "basic title font";
+    justify-content: space-around;
+    text-align: center;
+    font-family: basic title font;
     font-size: 25px;
     width: 500px;
     height: 180px;
     background: black;
     color: white;
     padding: 20px; }
-  .about-section #triangle {
+  .triangle-section .triangle {
     width: 0;
     height: 0;
     border-top: 220px solid black;
     border-right: 100px solid transparent; }
-  .about-section #greeting {
+  .triangle-section .triangle-header {
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: "dk petit four";
-    font-size: 50px;
-    margin: 0px;
-    color: white; }
-  .about-section .project-header {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: "dk petit four";
+    font-family: dk petit four;
     font-size: 50px;
     margin: 0px;
     display: flex;
     align-items: flex-end; }
-    .about-section .project-header h3 {
+    .triangle-section .triangle-header h3 {
       margin: 0px;
       font-size: 180px; }
 
 @media (max-width: 950px) {
-  .project-header {
+  .triangle-header {
     display: none; }
-    .project-header h3 {
+    .triangle-header h3 {
       display: none; } }
 
 @media (max-width: 475px) {
-  #triangle {
+  .triangle {
     display: none; } }
 
 @media (max-width: 950px) {
@@ -110,7 +133,7 @@
       justify-content: center; }
       .projects-container .project-title h3 {
         font-size: 130px;
-        font-family: "dk petit four";
+        font-family: dk petit four;
         margin: 10px; }
   .project-wrapper {
     width: 100vw;
@@ -129,7 +152,7 @@
       text-align: center; }
     .project-wrapper .project-hover {
       visibility: hidden;
-      font-family: "basic title font";
+      font-family: basic title font;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
@@ -142,7 +165,7 @@
       box-sizing: border-box;
       padding: 30px; }
       .project-wrapper .project-hover h5 {
-        font-family: "dk petit four";
+        font-family: dk petit four;
         font-size: 30px;
         margin-bottom: 0px; }
       .project-wrapper .project-hover .links {
@@ -181,7 +204,7 @@
       text-align: center; }
     .project-wrapper .project-hover {
       visibility: hidden;
-      font-family: "basic title font";
+      font-family: basic title font;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
@@ -194,7 +217,7 @@
       box-sizing: border-box;
       padding: 30px; }
       .project-wrapper .project-hover h5 {
-        font-family: "dk petit four";
+        font-family: dk petit four;
         font-size: 30px;
         margin-bottom: 0px; }
       .project-wrapper .project-hover .links {
@@ -246,50 +269,74 @@
   #state-of-solar a:hover {
     color: #28a3c3; }
 
-@media (max-width: 505px) {
-  .skills-body {
-    background-image: url("/../images/skills-bg.jpg");
-    background-repeat: repeat;
-    background-size: 300px;
-    height: 700px;
+.triangle-section {
+  display: flex;
+  flex-direction: row nowrap; }
+  .triangle-section .triangle-body {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: "dk petit four";
-      font-size: 50px; } }
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-family: basic title font;
+    font-size: 25px;
+    width: 500px;
+    height: 180px;
+    background: black;
+    color: white;
+    padding: 20px; }
+  .triangle-section .triangle {
+    width: 0;
+    height: 0;
+    border-top: 220px solid black;
+    border-right: 100px solid transparent; }
+  .triangle-section .triangle-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: dk petit four;
+    font-size: 50px;
+    margin: 0px;
+    display: flex;
+    align-items: flex-end; }
+    .triangle-section .triangle-header h3 {
+      margin: 0px;
+      font-size: 180px; }
 
-@media (min-width: 506px) and (max-width: 732px) {
-  .skills-body {
-    background-image: url("/../images/skills-bg.jpg");
-    background-repeat: repeat;
-    background-size: 300px;
-    height: 550px;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: "dk petit four";
-      font-size: 50px; } }
+@media (max-width: 950px) {
+  .triangle-header {
+    display: none; }
+    .triangle-header h3 {
+      display: none; } }
 
-@media (min-width: 733px) {
-  .skills-body {
-    background-image: url("/../images/skills-bg.jpg");
-    background-repeat: repeat;
-    background-size: 300px;
-    height: 400px;
+@media (max-width: 475px) {
+  .triangle {
+    display: none; } }
+
+#skills-spacer {
+  margin-top: 30px; }
+
+@media (min-width: 951px) {
+  .skills-title {
+    visibility: hidden;
+    font-size: 0px; } }
+
+@media (max-width: 950px) {
+  .skills-title {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center; }
-    .skills-body h3 {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      font-family: "dk petit four";
-      font-size: 50px; } }
+    justify-content: center; }
+    .skills-title h3 {
+      font-size: 130px;
+      font-family: dk petit four;
+      margin: 10px; } }
+
+.skills {
+  background: #C33F3F; }
+
+.skills-body {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
 
 .skills-row {
   display: flex;
@@ -304,27 +351,28 @@
   margin: 15px;
   align-items: center; }
   .skills-column h5 {
-    font-family: "basic title font";
+    font-family: basic title font;
     font-size: 30px;
     margin: 0px; }
   .skills-column li {
-    font-family: "basic title font";
+    font-family: basic title font;
     font-size: 15px;
     color: black; }
 
 .contact-body {
+  background: #C33F3F;
   display: flex;
   flex-flow: column nowrap;
   align-items: center; }
   .contact-body h3 {
     margin-top: 50px;
     margin-bottom: 50px;
-    font-family: "dk petit four";
+    font-family: dk petit four;
     font-size: 50px; }
   .contact-body form {
     display: flex;
     flex-flow: column nowrap;
-    font-family: "basic title font";
+    font-family: basic title font;
     font-size: 30px;
     width: 80vw;
     max-width: 500px; }
@@ -333,6 +381,10 @@
     font-size: 15px;
     margin-bottom: 30px; }
   .contact-body a {
+    padding-left: 10px;
+    padding-right: 10px;
     color: black; }
     .contact-body a :hover {
-      color: #FA0914; }
+      color: white; }
+  .contact-body .icon-wrapper {
+    padding: 30px; }

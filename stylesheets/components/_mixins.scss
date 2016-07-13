@@ -46,3 +46,57 @@ $bg-height: 675px;
     }
   }
 }
+
+@mixin triangle {
+  .triangle-section{
+    display: flex;
+    flex-direction: row nowrap;
+    .triangle-body{
+      @include flex-column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      font-family: $body-font;
+      font-size: 25px;
+      width: 500px;
+      height: 180px;
+      background: black;
+      color: white;
+      padding: 20px;
+    }
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 220px solid black;
+      border-right: 100px solid transparent;
+    }
+
+    .triangle-header {
+      @include header;
+      margin: 0px;
+      display: flex;
+      align-items: flex-end;
+
+      & h3 {
+        margin: 0px;
+        font-size: 180px;
+      }
+    }
+  }
+
+  @media (max-width: 950px) {
+    .triangle-header{
+      display: none;
+
+      & h3 {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 475px) {
+    .triangle {
+      display: none;
+    }
+  }
+}

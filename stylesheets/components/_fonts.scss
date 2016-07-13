@@ -1,7 +1,38 @@
-$header-font: 'dk petit four';
-$body-font: 'basic title font';
+@font-face {
+  font-family: baby blocks;
+  src: url('/fonts/baby_blocks.ttf');
+}
+@font-face {
+  font-family: basic title font;
+  src: url('/fonts/basictitlefont.ttf');
+}
+@font-face {
+  font-family: dk petit four;
+  src: url('/fonts/DK_Petit_Four.otf');
+}
+@font-face {
+  font-family: frenchy;
+  src: url('/fonts/frenchy.ttf');
+}
+@font-face {
+  font-family: geoSansLight;
+  src: url('/fonts/GeosansLight.ttf');
+}
+
+
+$body-font: basic title font;
+$header-font: dk petit four;
+$robot-font: baby blocks;
+$jerk-font: frenchy;
+$solar-font: geoSansLight;
 
 $header1-size: 80px;
 $header2-size: 50px;
 $body1-size: 30px;
 $body2-size: 15px;
+
+#greeting {
+  @include header;
+  margin: 0px;
+  color: white;
+}

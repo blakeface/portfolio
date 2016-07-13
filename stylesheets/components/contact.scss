@@ -1,4 +1,5 @@
 .contact-body{
+  background: #C33F3F;
   @include flex-column;
   align-items: center;
 
@@ -21,9 +22,19 @@
   }
 
   a {
+    padding-left: 10px;
+    padding-right: 10px;
     color: black;
     & :hover {
-      color: #FA0914;
+      color: white;
     }
   }
+
+  .icon-wrapper {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 450px){
+  
 }

@@ -14,15 +14,15 @@
 
     <!-- directives -->
     <script src="/directives/welcome.js"></script>
-    <script src="/directives/body.js"></script>
+    <script src="/directives/projects.js"></script>
     <script src="/directives/skills.js"></script>
     <script src="/directives/contact.js"></script>
 
   </head>
   <body ng-controller="mainCtrl as vm" class='body-wrapper'>
-    <div class="temp-container">
-      <h1>Temporarily Offline</h1>
-      <h3>Sorry. Please visit me on <a href="https://github.com/blakeface">GitHub</a> instead</h3>
-    </div>
+    <bn-welcome></bn-welcome>
+    <bn-projects></bn-projects>
+    <bn-skills></bn-skills>
+    <bn-contact></bn-contact>
   </body>
 </html>
