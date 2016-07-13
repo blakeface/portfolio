@@ -1,3 +1,11 @@
+@include triangle;
+
+#greeting {
+  @include header;
+  margin: 0px;
+  color: white;
+}
+
 @media (max-width: 950px) {
   .projects-container {
     .project-title {
@@ -74,7 +82,7 @@
 #jerk {
   background: #C33F3F;
   #jerk-font {
-    font-family: frenchy;
+    font-family: $jerk-font;
     color: white;
     font-size: 100px;
     margin: 0px;
@@ -93,7 +101,7 @@
 
 #robot-xylphone {
   #robot-font {
-    font-family: baby blocks;
+    font-family: $robot-font;
     font-size: 50px;
     color: white;
   }
@@ -111,7 +119,7 @@
   .project h3 {
     margin: 0px;
     justify-content: space-around;
-    font-family: geoSansLight;
+    font-family: $solar-font;
     font-size: 80px;
     color: white;
     text-align: center;
