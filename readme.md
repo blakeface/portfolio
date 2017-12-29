@@ -1,5 +1,7 @@
-#Portfolio
+# Portfolio
 
-Built with Angularjs, SCSS
+## Built with:    
+* Angularjs 
+* SCSS
 
-URL coming soon...
+visit at [blakeface.us](blakeface.us)
